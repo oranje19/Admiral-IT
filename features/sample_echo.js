@@ -45,6 +45,7 @@ module.exports = function(controller) {
             let info = selected === "Jason" ? jason : michael;
             options = Object.keys(info['basics'])
             key = "basics"
+            key2 = false;
             console.log(options)
             // make button to show up
 
@@ -57,7 +58,9 @@ module.exports = function(controller) {
         } else {
             await bot.reply(message, `${selected}'s work is selected.`)
             let info = selected === 'Jason' ? jason : michael;
-            
+            options = Object.keys(info['work'])
+            key = "work"
+            key2 = false;
         }
     })
 
@@ -66,6 +69,10 @@ module.exports = function(controller) {
             await bot.reply(message, 'Please select Michael or Jason to proceed.')
         } else {
             await bot.reply(message, `${selected}'s project is selected.`)
+            let info = selected === 'Jason' ? jason : michael;
+            options = Object.keys(info['project'])
+            key = "project"
+            key2 = false;
         }
     })
 
@@ -74,6 +81,10 @@ module.exports = function(controller) {
             await bot.reply(message, `Please select Michael or Jason to proceed.`)
         } else {
             await bot.reply(message, `${selected}'s education is selected.`)
+            let info = selected === 'Jason' ? jason : michael;
+            options = Object.keys(info['education'])
+            key = "education"
+            key2 = false;
         }
     })
 
@@ -85,20 +96,19 @@ module.exports = function(controller) {
             let info = selected === "Jason" ? jason : michael;
             options = Object.keys(info['skills'])
             key = "skills"
+            key2 = false;
         }
     })
 
     controller.hears('languages', 'message, direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, 'Please select Michael or Jason to proceed.')
+            await bot.reply(message, `Please select Michael or Jason to proceed.`)
         } else {
-            if(selected === 'Jason') {
-                // interate through Jason's languages and fluency assign to string
-                
-            } else {
-                
-            }
-            await bot.reply(message, `${selected}' speaks...`)
+            await bot.reply(message, `${selected}'s languages are selected`)
+            let info = selected === "Jason" ? jason : michael;
+            options = Object.keys(info['languages'])
+            key = "languages"
+            key2 = false;
         }
     })
     
@@ -114,6 +124,9 @@ module.exports = function(controller) {
                 // Iterate through Michael's interests assign to string
                 let str = '';
                 await bot.reply(message, `${selected}'s interests are ${str}`);
+                options = Object.keys(info['interests'])
+                key = "interests"
+                key2 = false;
             }
         }
     })
@@ -135,7 +148,13 @@ module.exports = function(controller) {
                             
                         // }
                         // key2 = options[i];
+                        console.log(key)
+                        console.log(options[i])
+                        console.log(info[key][options[i]])
                         key2 = options[i]
+
+                        options = Object.keys(info[key][key2])
+                        console.log(options)
                         await bot.reply(message, `${key2} is selected.`)
                     }  else {
                         if(key2){
@@ -148,6 +167,8 @@ module.exports = function(controller) {
                     }
                 }
             }
+        } else {
+            await bot.reply(message, `Input is not valid.`)
         }
     })
 
