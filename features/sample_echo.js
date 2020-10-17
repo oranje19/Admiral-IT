@@ -11,6 +11,8 @@ var michael = require('../resumes/michael.json')
 module.exports = function(controller) {
 
     let selected = "";
+    let key = "";
+    let key2 = false;
     let options = "";
 
     controller.hears('test','message,direct_message', async(bot, message) => {
@@ -38,7 +40,12 @@ module.exports = function(controller) {
         if (selected === '') {
             await bot.reply(message, 'Please select Michael or Jason to proceed.')
         } else {
+            // console.log("here")
             await bot.reply(message, `${selected}'s basics are selected`)
+            let info = selected === "Jason" ? jason : michael;
+            options = Object.keys(info['basics'])
+            key = "basics"
+            console.log(options)
             // make button to show up
 
         }
@@ -49,7 +56,8 @@ module.exports = function(controller) {
             await bot.reply(message, 'Please select Michael or Jason to proceed.')
         } else {
             await bot.reply(message, `${selected}'s work is selected.`)
-            // options = 
+            let info = selected === 'Jason' ? jason : michael;
+            
         }
     })
 
@@ -74,6 +82,9 @@ module.exports = function(controller) {
             await bot.reply(message, `Please select Michael or Jason to proceed.`)
         } else {
             await bot.reply(message, `${selected}'s skills are selected`)
+            let info = selected === "Jason" ? jason : michael;
+            options = Object.keys(info['skills'])
+            key = "skills"
         }
     })
 
@@ -110,5 +121,36 @@ module.exports = function(controller) {
     controller.on('message,direct_message', async(bot, message) => {
         await bot.reply(message, `Echo: ${ message.text }`);
     });
+
+    controller.hears('', 'message, direct_message', async(bot, message) => {
+        if (options.includes(message.text)) {
+            for (let i = 0; i < options.length; i++) {
+                // console.log(options[i]);
+                // console.log(i);
+                // console.log(message, message.text)
+                if (message.text === options[i]) {
+                    let info = selected === 'Jason' ? jason : michael;
+                    if (typeof info[key][options[i]] === 'object' && info[key][options[i]] !== null) {
+                        // for (let j = 0; j < options[i].length; j++) {
+                            
+                        // }
+                        // key2 = options[i];
+                        key2 = options[i]
+                        await bot.reply(message, `${key2} is selected.`)
+                    }  else {
+                        if(key2){
+                            let info = selected === 'Jason' ? jason : michael;
+                            await bot.reply(message, `${selected}'s ${options[i]} is ${info[key][key2][options[i]]}`)
+                        } else {
+                            let info = selected === 'Jason' ? jason : michael;
+                            await bot.reply(message, `${selected}'s ${options[i]} is ${info[key][options[i]]}`)
+                        }
+                    }
+                }
+            }
+        }
+    })
+
+    // controller.hears('back', )
 
 }

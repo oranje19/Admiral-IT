@@ -14,25 +14,25 @@
             "countryCode": "US",
             "region": "California"
         },
-        "profiles": [
-            {
+        "profiles": {
+            "linkedin": {
                 "network": "LinkedIn",
                 "name": "Jason Wintery",
                 "url": "https://www.linkedin.com/in/jasonwintery"
             },
-            {
+            "github": {
                 "network": "GitHub",
                 "username": "oranje19",
                 "url": "https://github.com/oranje19"
             },
-            {
+            "portfolio": {
                 "network": "Portfolio",
                 "url": ""
             }
-        ]
+        }
     },
-    "work": [
-        {
+    "work": {
+        "family office": {
             "company": "Family Office",
             "position": "Associate",
             "website": "https://www.vuventurepartners.com",
@@ -45,7 +45,7 @@
                 "Conducted quantitative and qualitative deep due diligence including: Market sizing, team's ability to execute, go-to-market strategy, key risks, business model, key metrics, capital efficiency, financial modeling, competitive landscape, customer and investor interviews, cap table and waterfall analysis, term sheets and investment documents."
             ]
         },
-        {
+        "tunas jaya irja": {
             "company": "Tunas Jaya Irja",
             "position": "Consultant",
             "website": "",
@@ -59,9 +59,9 @@
                 "Implemented a performance-driven, employee incentive program that saves the company 5% of its operational costs."
             ]
         }
-    ],
-    "project": [
-        {
+    },
+    "project": {
+        "grande": {
             "name": "Grande",
             "summary": "Grande is a Medium inspired app that lets users publish their own stories that can be viewed and clapped by other users.",
             "highlights": [
@@ -70,7 +70,7 @@
                 "Stored images on Amazon Web Services S3 (AWS) for website speed optimization, reducing server load and allowing web apps to scale gracefully."
             ]
         },
-        {
+        "nite trader": {
             "name": "NiteTrader",
             "summary": "NiteTrader is a stock simulator app where users will be able to but/sell stock much similar to the actual stock market.",
             "highlights": [
@@ -79,7 +79,7 @@
                 "Leveraged the AlphaVantage stock API to fetch real-time, latest stock price to update users' portfolios and buy/sell."
             ]
         },
-        {
+        "forty96": {
             "name": "forty96",
             "summary": "forty96 is a puzzle game inspired by the 2048 game where players will slide blocks to add up numbers until it reaches 4096,",
             "highlights": [
@@ -88,9 +88,9 @@
                 "Constructed the game to be unique to allow users to add tile without moving any tiles."
             ]
         }
-    ],
-    "education": [
-        {
+    },
+    "education": {
+        "harvard university": {
             "institution": "Harvard University",
             "area": "Business Economics, Management",
             "studyType": "Master",
@@ -110,7 +110,7 @@
                 "Organizational Behavior"
             ]
         },
-        {
+        "santa clara univeristy": {
             "institution": "Santa Clara University",
             "area": "Electrical Engineering",
             "studyType": "Bachelor",
@@ -138,7 +138,7 @@
                 "Thermodynamics I"
             ]
         },
-        {
+        "app academy": {
             "institution": "App Academy",
             "area": "Software Development",
             "studyType": "Certificate",
@@ -146,31 +146,27 @@
             "endDate": "May 2020",
             "courses": ["16 Week Software Engineering Immersive"]
         }
-    ],
-    "skills": [
-        {
+    },
+    "skills": {
             "programmingLanguages": ["Ruby", "JavaScript", "Python", "C/C++", "Java", "HTML5", "CSS3"],
             "librariesFrameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery", "Node.js"],
             "webTools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS"]
-        }
-    ],
-    "languages": [
-        {
+    },
+    "languages": {
+        "english": {
             "language": "English",
             "fluency": "Native speaker"
         },
-        {
+        "chinese": {
             "language": "Chinese - Mandarin",
             "fluency": "Elementary proficiency"
         },
-        {
+        "indonesian": {
             "language": "Bahasa Indonesia",
             "fluency": "Native speaker"
         }
-    ],
-    "interests": [
-        {
+    },
+    "interests": {
             "name": ["Basketball", "Boxing", "Golf", "Traveling", "Sports"]
-        }
-    ]
+    }
 }
