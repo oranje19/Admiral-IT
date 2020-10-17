@@ -1,0 +1,122 @@
+{
+    "basics": {
+        "name": "Michael Murry",
+        "label": "Software Engineer",
+        "picture": "",
+        "email": "michaelmurry49@gmail.com",
+        "phone": "(209) 770-0349",
+        "website": "",
+        "summary": "",
+        "location": {
+            "address": "518 Sundown LN",
+            "postalCode": "CA 95370",
+            "city": "Sonora",
+            "countryCode": "US",
+            "region": "California"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "name": "Michael Murry",
+                "url": "https://www.linkedin.com/in/michael-murry-b3746a1a6/"
+            },
+            {
+                "network": "GitHub",
+                "username": "MichaelMurry49",
+                "url": "https://github.com/MichaelMurry49/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "GetMoreMath",
+            "position": "Software Engineer",
+            "website": "https://getmoremath.com/",
+            "startDate": "September 2018",
+            "endDate": "January 2020",
+            "summary": "",
+            "highlights": [
+                "Ran tests on hundreds of different Math problems from problem sets ranging from Basic Math to Algebra and Geometry",
+                "Used Jira Kanban to claim, clear and report bugs on Math problems"
+            ]
+        }
+    ],
+    "project": [
+        {
+            "name": "BlueTube",
+            "summary": "Video hosting website inspired by YouTube",
+            "highlights": [
+              "Leveraved polymorphic associations on the Likes table with comments and videos, allowing for DRY code and efficient database calls",
+              "Used AJAX and Ruby on Rails to implement CRUD actions on videos, comments, and likes.",
+              "Stored videos and thumbnails on Amazon Web Services S3 (AWS S3) for increased uploading speed as well as scalability of media storage.",
+              "Validated user sign in with hashed and salted passwords using BCRYPT as well as session tokens generated with SecureRandom and stored in cookies"
+            ]
+        },
+        {
+            "name": "KRMA",
+            "summary": "Media exchange platform, allowing users to inspire others through image and video posts",
+            "highlights": [
+              "Acted as a frontend developer",
+              "Coordinated with teammates using Git workflow, allowing for simultaneous, collaborative development",
+              "Used validators to handle error rendering for session forms, ensuring user security and privacy"
+            ]
+        },
+        {
+            "name": "TileDoge",
+            "summary": "Typing game on an 8x8 tile grid with adversaries and obstacles",
+            "highlights": [
+              
+            ]
+        },
+        {
+            "name": "RockPaperScissors",
+            "summary": "",
+            "highlights": [
+              
+            ]
+        },
+        {
+            "name": "KanbanBoard",
+            "summary": "",
+            "highlights": [
+
+            ]
+        }
+
+    ],
+    "education": [
+        {
+            "institution": "Columbia College",
+            "area": "Science",
+            "studyType": "Associates",
+            "startDate": "",
+            "endDate": "",
+            "courses": [
+                ""
+            ]
+        },
+        {
+            "institution": "California State University Stanislaus",
+            "area": "Computer Science",
+            "studyType": "Bachelor's",
+            "startDate": "",
+            "endDate": "",
+            "courses": [
+                ""
+            ]
+        }
+    ],
+    "skills": {
+        "languages": ["JavaScript", "Ruby", "Java", "HTML5", "CSS3"],
+        "libraries/frameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery"],
+        "webTools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS3"] 
+    },
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+    ]
+}

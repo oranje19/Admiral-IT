@@ -1,0 +1,176 @@
+{
+    "basics": {
+        "name": "Jason Wintery",
+        "label": "Programmer",
+        "picture": "",
+        "email": "jasonwintery@gmail.com",
+        "phone": "(415) 535-7268",
+        "website": "http://www.jasonwintery.com",
+        "summary": "A summary of Jason Wintery...",
+        "location": {
+            "address": "18 10th St",
+            "postalCode": "CA 94103",
+            "city": "San Francisco",d
+            "countryCode": "US",
+            "region": "California"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "name": "Jason Wintery",
+                "url": "https://www.linkedin.com/in/jasonwintery"
+            },
+            {
+                "network": "GitHub",
+                "username": "oranje19",
+                "url": "https://github.com/oranje19"
+            },
+            {
+                "network": "Portfolio",
+                "url": ""
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Family Office",
+            "position": "Associate",
+            "website": "https://www.vuventurepartners.com",
+            "startDate": "September 2019",
+            "endDate": "January 2020",
+            "summary": "A $100M multi-stage venture capital fund that focuses across Consumer, Enterprise, Fintech, FrontierTech, and HealthTech",
+            "highlights": [
+                "Sourced investment opportunities using a structured approach to increasing deal flow velocity in both quantity and quality by doing weekly sprints using multiple deal flow channels.",
+                "Developed investment theses around various industry verticals, reviewed pitch decks, scheduled meetings with startups and investors, and presented top investment opportunities at weekly Partner's Meeting and Investment Committees.",
+                "Conducted quantitative and qualitative deep due diligence including: Market sizing, team's ability to execute, go-to-market strategy, key risks, business model, key metrics, capital efficiency, financial modeling, competitive landscape, customer and investor interviews, cap table and waterfall analysis, term sheets and investment documents."
+            ]
+        },
+        {
+            "company": "Tunas Jaya Irja",
+            "position": "Consultant",
+            "website": "",
+            "startDate": "July 2017",
+            "endDate": "July 2018",
+            "summary": "A multi-conglomerate holding company in Indonesia that operates in Construction, Electrical Manufacturing, and Energy.",
+            "highlights": [
+                "Supported clients in project planning, cost estimation, and solving structural issues.",
+                "Coordinated project kickoff meetings to align contractors, store management, and team members.",
+                "Configured payroll and timesheet tracking to report project labor costs and monitor overhead costs.",
+                "Implemented a performance-driven, employee incentive program that saves the company 5% of its operational costs."
+            ]
+        }
+    ],
+    "project": [
+        {
+            "name": "Grande",
+            "summary": "Grande is a Medium inspired app that lets users publish their own stories that can be viewed and clapped by other users.",
+            "highlights": [
+                "Ensured user privacy and autonomy through frontend and backend authentication measures and React router, only allowing logged in users to have access to create, edit and delete their content.",
+                "Leveraged CSS flexbox, and React modal for an appealing and dynamic layout to the page and applying custom design and functionality to the react library for smooth user experience in rich text editing.",
+                "Stored images on Amazon Web Services S3 (AWS) for website speed optimization, reducing server load and allowing web apps to scale gracefully."
+            ]
+        },
+        {
+            "name": "NiteTrader",
+            "summary": "NiteTrader is a stock simulator app where users will be able to but/sell stock much similar to the actual stock market.",
+            "highlights": [
+                "Built features where users can see their portfolio, watchlists, and buy/sell stock according to the stock hours.",
+                "Implemented user authentication using MongoDB, Express, React, Node by utilizing Json Web Token (JWT).",
+                "Leveraged the AlphaVantage stock API to fetch real-time, latest stock price to update users' portfolios and buy/sell."
+            ]
+        },
+        {
+            "name": "forty96",
+            "summary": "forty96 is a puzzle game inspired by the 2048 game where players will slide blocks to add up numbers until it reaches 4096,",
+            "highlights": [
+                "Used vanilla JavaScript to create the whole app while maintaing the rigorous implementation for the app to work.",
+                "Designed original UI using HTML5, CSS, and JavaScript to handle the movement of the game.",
+                "Constructed the game to be unique to allow users to add tile without moving any tiles."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Harvard University",
+            "area": "Business Economics, Management",
+            "studyType": "Master",
+            "startDate": "August 2018",
+            "endDate": "May 2019",
+            "courses": [
+                "Marketing",
+                "Judgment and Decision Making",
+                "Creativity and Innovation",
+                "Investment Theory - Applications",
+                "Microeconomics",
+                "Consumer Behavior",
+                "Business Strategy",
+                "Management Essentials",
+                "Accounting",
+                "Strategic Management",
+                "Organizational Behavior"
+            ]
+        },
+        {
+            "institution": "Santa Clara University",
+            "area": "Electrical Engineering",
+            "studyType": "Bachelor",
+            "startDate": "January 2015",
+            "endDate": "June 2017",
+            "courses": [
+                "Abstract Data Types & Structures",
+                "Control Systems",
+                "Digital Integrated Circuit Design",
+                "Digital System Architectures",
+                "Electric Circuits I",
+                "Electric Circuits II",
+                "Electromagnetics I",
+                "Electronic Circuits I",
+                "Energy Storage Systems",
+                "Ethics in Technology",
+                "Introduction to Logic Design",
+                "Linear Systems",
+                "Mechanics I: Statics",
+                "Mechatronics",
+                "Power System Analysis",
+                "Power System Stability & Control",
+                "Project Management",
+                "Semiconductor Devices",
+                "Thermodynamics I"
+            ]
+        },
+        {
+            "institution": "App Academy",
+            "area": "Software Development",
+            "studyType": "Certificate",
+            "startDate": "February 2020",
+            "endDate": "May 2020",
+            "courses": ["16 Week Software Engineering Immersive"]
+        }
+    ],
+    "skills": [
+        {
+            "programmingLanguages": ["Ruby", "JavaScript", "Python", "C/C++", "Java", "HTML5", "CSS3"],
+            "librariesFrameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery", "Node.js"],
+            "webTools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "Chinese - Mandarin",
+            "fluency": "Elementary proficiency"
+        },
+        {
+            "language": "Bahasa Indonesia",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": ["Basketball", "Boxing", "Golf", "Traveling", "Sports"]
+        }
+    ]
+}
