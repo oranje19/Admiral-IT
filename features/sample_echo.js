@@ -14,14 +14,17 @@ module.exports = function(controller) {
     let key = "";
     let key2 = false;
     let options = "";
+    export let buttonSet = "names"
 
-    controller.hears('test','message,direct_message', async(bot, message) => {
-        await bot.reply(message, jason["work"][0]["company"]);
-    });
+    // controller.hears('test','message,direct_message', async(bot, message) => {
+    //     await bot.reply(message, jason["work"][0]["company"]);
+    // });
 
-    controller.hears('sample','message,direct_message', async(bot, message) => {
-        await bot.reply(message, 'I heard a sample message.');
-    });
+    // controller.hears('sample','message,direct_message', async(bot, message) => {
+    //     await bot.reply(message, 'I heard a sample message.');
+    // });
+
+    
 
     controller.hears( 'michael|jason', 'message,direct_message', async(bot, message) => {
         if(message.text.toLowerCase().includes(`michael`) && message.text.toLowerCase().includes("jason")){
@@ -47,6 +50,22 @@ module.exports = function(controller) {
             key = "basics"
             key2 = false;
             console.log(options)
+            // make button to show up
+
+        }
+    })
+
+    controller.hears('profiles', 'message,direct_message', async(bot, message) => {
+        if (selected === '') {
+            await bot.reply(message, 'Please select Michael or Jason to proceed.')
+        } else {
+            // console.log("here")
+            await bot.reply(message, `${selected}'s profiles are selected`)
+            let info = selected === "Jason" ? jason : michael;
+            options = Object.keys(info['profiles'])
+            key = "profiles"
+            key2 = false;
+            // console.log(options)
             // make button to show up
 
         }
@@ -159,10 +178,10 @@ module.exports = function(controller) {
                     }  else {
                         if(key2){
                             let info = selected === 'Jason' ? jason : michael;
-                            await bot.reply(message, `${selected}'s ${options[i]} is ${info[key][key2][options[i]]}`)
+                            await bot.reply(message, `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][key2][options[i]]}`)
                         } else {
                             let info = selected === 'Jason' ? jason : michael;
-                            await bot.reply(message, `${selected}'s ${options[i]} is ${info[key][options[i]]}`)
+                            await bot.reply(message, `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][options[i]]}`)
                         }
                     }
                 }
