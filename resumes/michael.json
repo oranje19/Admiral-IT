@@ -1,100 +1,95 @@
 {
-    "basics": {
-        "name": "Michael Murry",
-        "label": "Software Engineer",
-        "picture": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/716/medium/Michael_Murry_1.JPG?1583208264",
-        "email": "michaelmurry49@gmail.com",
-        "phone": "(209) 770-0349",
-        "website": "",
-        "summary": "My name is Michael, and the revolutionary world of coding is something I am really passionate about. Solving algorithms on Leetcode is exciting, and I enjoy the challenge of solving bugs and problems in the code I write. I graduated from Stanislaus State University with a Bachelor's of Science degree in Computer Science, and have experience using Jira’s Kanban board from a math beta testing position I had with Get More Math. Some of the languages and tools I have recently used include JavaScript, Ruby, Ruby on Rails, Java, React, Redux, CSS3, and Git.",
-        "location": {
-            "address": "518 Sundown LN",
-            "postalCode": "CA 95370",
-            "city": "Sonora",
-            "countryCode": "US",
-            "region": "California"
+    "Basics": {
+        "Name": "Michael Murry",
+        "Label": "Software Engineer",
+        "Picture": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/716/medium/Michael_Murry_1.JPG?1583208264",
+        "Email": "michaelmurry49@gmail.com",
+        "Phone": "(209) 770-0349",
+        "Website": "",
+        "Summary": "My name is Michael, and the revolutionary world of coding is something I am really passionate about. Solving algorithms on Leetcode is exciting, and I enjoy the challenge of solving bugs and problems in the code I write. I graduated from Stanislaus State University with a Bachelor's of Science degree in Computer Science, and have experience using Jira’s Kanban board from a math beta testing position I had with Get More Math. Some of the languages and tools I have recently used include JavaScript, Ruby, Ruby on Rails, Java, React, Redux, CSS3, and Git.",
+        "Location": {
+            "Address": "518 Sundown Ln",
+            "City": "Sonora",
+            "State": "California",
+            "Zip code": "CA 95370",
+            "Country": "US"
         }
     },
-    "profiles": {
-        "linkedin": {
-            "network": "LinkedIn",
-            "name": "Michael Murry",
-            "url": "https://www.linkedin.com/in/michael-murry-b3746a1a6/"
+    "Profiles": {
+        "LinkedIn": {
+            "Url": "https://www.linkedin.com/in/michael-murry-b3746a1a6/"
         },
-        "github": {
-            "network": "GitHub",
-            "username": "MichaelMurry49",
-            "url": "https://github.com/MichaelMurry49/"
+        "GitHub": {
+            "Username": "MichaelMurry49",
+            "Url": "https://github.com/MichaelMurry49/"
         }
     },
-    "work": {
-        "get more math": {
-            "company": "GetMoreMath",
-            "position": "Software Engineer",
-            "website": "https://getmoremath.com/",
-            "startDate": "September 2018",
-            "endDate": "January 2020",
-            "summary": "Hyper Intelligent Teacher’s Aid",
-            "highlights": [
+    "Work": {
+        "Get More Math": {
+            "Company": "GetMoreMath",
+            "Position": "Software Engineer",
+            "Website": "https://getmoremath.com/",
+            "Start date": "September 2018",
+            "End date": "January 2020",
+            "Summary": "Hyper Intelligent Teacher’s Aid",
+            "Highlights": [
                 "Ran tests on hundreds of different Math problems from problem sets ranging from Basic Math to Algebra and Geometry",
                 "Used Jira Kanban to claim, clear and report bugs on Math problems"
             ]
         }
     },
-    "project": {
-        "bluetube": {
-            "name": "BlueTube",
-            "summary": "Video hosting website inspired by YouTube",
-            "highlights": [
+    "Project": {
+        "BlueTube": {
+            "Name": "BlueTube",
+            "Summary": "Video hosting website inspired by YouTube",
+            "Highlights": [
               "Leveraged polymorphic associations on the Likes table with comments and videos, allowing for DRY code and efficient database calls",
               "Used AJAX and Ruby on Rails to implement CRUD actions on videos, comments, and likes.",
               "Stored videos and thumbnails on Amazon Web Services S3 (AWS S3) for increased uploading speed as well as scalability of media storage.",
               "Validated user sign in with hashed and salted passwords using BCRYPT as well as session tokens generated with SecureRandom and stored in cookies"
             ]
         },
-        "krma": {
-            "name": "KRMA",
-            "summary": "Media exchange platform, allowing users to inspire others through image and video posts",
-            "highlights": [
+        "KRMA": {
+            "Name": "KRMA",
+            "Summary": "Media exchange platform, allowing users to inspire others through image and video posts",
+            "Highlights": [
               "Acted as a frontend developer",
               "Coordinated with teammates using Git workflow, allowing for simultaneous, collaborative development",
               "Used validators to handle error rendering for session forms, ensuring user security and privacy"
             ]
         },
-        "tiledodge": {
-            "name": "TileDoge",
-            "summary": "Typing game on an 8x8 tile grid with adversaries and obstacles",
-            "highlights": [
+        "TileDodge": {
+            "Name": "TileDoge",
+            "Summary": "Typing game on an 8x8 tile grid with adversaries and obstacles",
+            "Highlights": [
               "Rendered 2D graphics through HTML Canvas enabling an immersive game experience", 
               "Collected user input for character movement using event listeners for lightweight, efficient interactivity", 
               "Implemented user collision detection with other creatures, triggering player respawn and decrementing the player life count, enabling competitive gameplay"
             ]
         },
-        "rockpaperscissors": {
-            "name": "RockPaperScissors",
-            "summary": "Rock Paper Scissors simulation.",
-            "highlights": [
+        "RockPaperScissors": {
+            "Summary": "Rock Paper Scissors simulation.",
+            "Highlights": [
               "Simuates the outcome of a rock paper scissors match bases on a sample population"
             ]
         },
-        "kanban board": {
-            "name": "Kanban Board",
-            "summary": "Front end interactive KanBan Board",
-            "highlights": [
+        "KanbanBoard": {
+            "Summary": "Front end interactive KanBan Board",
+            "Highlights": [
               "Enabled drag and drop with onDrag, onDragOver, and onDragEnd",
               "Sorts cards with"
             ]
         }
 
     },
-    "education":{
-        "columbia college": {
-            "institution": "Columbia College",
-            "area": "Science",
-            "studyType": "Associates",
-            "startDate": "2011",
-            "endDate": "2016",
-            "courses": [
+    "Education":{
+        "Columbia College": {
+            "Institution": "Columbia College",
+            "Area": "Science",
+            "Study type": "Associates",
+            "Start date": "2011",
+            "End date": "2016",
+            "Courses": [
                 "Tennis I CHHP-50A",
                 "Introduction to Programming CCMPSC-5",
                 "Introduction to HTML CCMPSC-13",
@@ -120,13 +115,13 @@
                 "Introduction to Music CMUSIC-2"
             ]
         },
-        "stanislaus": {
-            "institution": "California State University Stanislaus",
-            "area": "Computer Science",
-            "studyType": "Bachelor's",
-            "startDate": "2016",
-            "endDate": "2018",
-            "courses": [
+        "Stanislaus": {
+            "Institution": "California State University Stanislaus",
+            "Area": "Computer Science",
+            "Study type": "Bachelor's",
+            "Start date": "2016",
+            "End date": "2018",
+            "Courses": [
                 "Assembly Lang & Comp Archit CS 2700",
                 "Data Structures and Algorithms CS 3100",
                 "Jogging KINS 1050",
@@ -152,21 +147,20 @@
             ]
         }
     },
-    "skills": {
-        "languages": ["JavaScript", "Ruby", "Java", "HTML5", "CSS3"],
-        "libraries/frameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery"],
-        "webTools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS3"] 
+    "Skills": {
+        "Languages": ["JavaScript", "Ruby", "Java", "HTML5", "CSS3"],
+        "Libraries/Frameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery"],
+        "Web tools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS3"] 
     },
-    "languages": {
-        "english": {
-            "language": "English",
+    "Languages": {
+        "English": {
             "fluency": "Native speaker"
         }
     },
-    "interests": {
-      "reading": "...example",
-      "gaming": "...example",
-      "sports": "...example"
+    "Interests": {
+      "Reading": "...example",
+      "Gaming": "...example",
+      "Sports": "...example"
     }
 }
 

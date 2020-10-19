@@ -1,58 +1,53 @@
 {
-    "basics": {
-        "name": "Jason Wintery",
-        "label": "Programmer",
-        "picture": "https://media-exp1.licdn.com/dms/image/C5603AQHq0XoSmVfZGg/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=RvgipBZwB1FB6tPXkSEp7sHwj38u-Gpbjh9aIWQqZTc",
-        "email": "jasonwintery@gmail.com",
-        "phone": "(415) 535-7268",
-        "website": "http://www.jasonwintery.com",
-        "summary": "A summary of Jason Wintery...",
-        "location": {
-            "address": "18 10th St",
-            "postalCode": "CA 94103",
-            "city": "San Francisco",
-            "countryCode": "US",
-            "region": "California"
+    "Basics": {
+        "Name": "Jason Wintery",
+        "Label": "Programmer",
+        "Picture": "https://media-exp1.licdn.com/dms/image/C5603AQHq0XoSmVfZGg/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=RvgipBZwB1FB6tPXkSEp7sHwj38u-Gpbjh9aIWQqZTc",
+        "Email": "jasonwintery@gmail.com",
+        "Phone": "(415) 535-7268",
+        "Website": "http://www.jasonwintery.com",
+        "Summary": "A summary of Jason Wintery...",
+        "Location": {
+            "Address": "18 10th St",
+            "City": "San Francisco",
+            "State": "California",
+            "Zip Code": "94103",
+            "Country": "US"
         }
     },
-    "profiles": {
-        "linkedin": {
-            "media": "LinkedIn",
-            "name": "Jason Wintery",
-            "url": "https://www.linkedin.com/in/jasonwintery"
+    "Profiles": {
+        "LinkedIn": {
+            "Name": "Jason Wintery",
+            "Url": "https://www.linkedin.com/in/jasonwintery"
         },
-        "github": {
-            "media": "GitHub",
-            "username": "oranje19",
-            "url": "https://github.com/oranje19"
+        "GitHub": {
+            "Username": "oranje19",
+            "Url": "https://github.com/oranje19"
         },
-        "portfolio": {
-            "media": "Portfolio",
-            "url": ""
+        "Portfolio": {
+            "Url": ""
         }
     },
-    "work": {
-        "family office": {
-            "company": "Family Office",
-            "position": "Associate",
-            "website": "https://www.vuventurepartners.com",
-            "startDate": "September 2019",
-            "endDate": "January 2020",
-            "summary": "A $100M multi-stage venture capital fund that focuses across Consumer, Enterprise, Fintech, FrontierTech, and HealthTech",
-            "highlights": [
+    "Work": {
+        "Family Office": {
+            "Position": "Associate",
+            "Website": "https://www.vuventurepartners.com",
+            "Start Date": "September 2019",
+            "End Date": "January 2020",
+            "Summary": "A $100M multi-stage venture capital fund that focuses across Consumer, Enterprise, Fintech, FrontierTech, and HealthTech",
+            "Highlights": [
                 "Sourced investment opportunities using a structured approach to increasing deal flow velocity in both quantity and quality by doing weekly sprints using multiple deal flow channels.",
                 "Developed investment theses around various industry verticals, reviewed pitch decks, scheduled meetings with startups and investors, and presented top investment opportunities at weekly Partner's Meeting and Investment Committees.",
                 "Conducted quantitative and qualitative deep due diligence including: Market sizing, team's ability to execute, go-to-market strategy, key risks, business model, key metrics, capital efficiency, financial modeling, competitive landscape, customer and investor interviews, cap table and waterfall analysis, term sheets and investment documents."
             ]
         },
-        "tunas jaya irja": {
-            "company": "Tunas Jaya Irja",
-            "position": "Consultant",
-            "website": "",
-            "startDate": "July 2017",
-            "endDate": "July 2018",
-            "summary": "A multi-conglomerate holding company in Indonesia that operates in Construction, Electrical Manufacturing, and Energy.",
-            "highlights": [
+        "Tunas Jaya Irja": {
+            "Position": "Consultant",
+            "Website": "",
+            "Start Date": "July 2017",
+            "End Date": "July 2018",
+            "Summary": "A multi-conglomerate holding company in Indonesia that operates in Construction, Electrical Manufacturing, and Energy.",
+            "Highlights": [
                 "Supported clients in project planning, cost estimation, and solving structural issues.",
                 "Coordinated project kickoff meetings to align contractors, store management, and team members.",
                 "Configured payroll and timesheet tracking to report project labor costs and monitor overhead costs.",
@@ -60,43 +55,39 @@
             ]
         }
     },
-    "project": {
-        "grande": {
-            "name": "Grande",
-            "summary": "Grande is a Medium inspired app that lets users publish their own stories that can be viewed and clapped by other users.",
-            "highlights": [
+    "Project": {
+        "Grande": {
+            "Summary": "Grande is a Medium inspired app that lets users publish their own stories that can be viewed and clapped by other users.",
+            "Highlights": [
                 "Ensured user privacy and autonomy through frontend and backend authentication measures and React router, only allowing logged in users to have access to create, edit and delete their content.",
                 "Leveraged CSS flexbox, and React modal for an appealing and dynamic layout to the page and applying custom design and functionality to the react library for smooth user experience in rich text editing.",
                 "Stored images on Amazon Web Services S3 (AWS) for website speed optimization, reducing server load and allowing web apps to scale gracefully."
             ]
         },
-        "nite trader": {
-            "name": "NiteTrader",
-            "summary": "NiteTrader is a stock simulator app where users will be able to but/sell stock much similar to the actual stock market.",
-            "highlights": [
+        "NiteTrader": {
+            "Summary": "NiteTrader is a stock simulator app where users will be able to but/sell stock much similar to the actual stock market.",
+            "Highlights": [
                 "Built features where users can see their portfolio, watchlists, and buy/sell stock according to the stock hours.",
                 "Implemented user authentication using MongoDB, Express, React, Node by utilizing Json Web Token (JWT).",
                 "Leveraged the AlphaVantage stock API to fetch real-time, latest stock price to update users' portfolios and buy/sell."
             ]
         },
         "forty96": {
-            "name": "forty96",
-            "summary": "forty96 is a puzzle game inspired by the 2048 game where players will slide blocks to add up numbers until it reaches 4096,",
-            "highlights": [
+            "Summary": "forty96 is a puzzle game inspired by the 2048 game where players will slide blocks to add up numbers until it reaches 4096,",
+            "Highlights": [
                 "Used vanilla JavaScript to create the whole app while maintaing the rigorous implementation for the app to work.",
                 "Designed original UI using HTML5, CSS, and JavaScript to handle the movement of the game.",
                 "Constructed the game to be unique to allow users to add tile without moving any tiles."
             ]
         }
     },
-    "education": {
-        "harvard university": {
-            "institution": "Harvard University",
-            "area": "Business Economics, Management",
-            "studyType": "Master",
-            "startDate": "August 2018",
-            "endDate": "May 2019",
-            "courses": [
+    "Education": {
+        "Harvard University": {
+            "Area": "Business Economics, Management",
+            "Study Type": "Master",
+            "Start Date": "August 2018",
+            "End Date": "May 2019",
+            "Courses": [
                 "Marketing",
                 "Judgment and Decision Making",
                 "Creativity and Innovation",
@@ -110,13 +101,12 @@
                 "Organizational Behavior"
             ]
         },
-        "santa clara univeristy": {
-            "institution": "Santa Clara University",
-            "area": "Electrical Engineering",
-            "studyType": "Bachelor",
-            "startDate": "January 2015",
-            "endDate": "June 2017",
-            "courses": [
+        "Santa Clara Univeristy": {
+            "Area": "Electrical Engineering",
+            "Study Type": "Bachelor",
+            "Start Date": "January 2015",
+            "End Date": "June 2017",
+            "Courses": [
                 "Abstract Data Types & Structures",
                 "Control Systems",
                 "Digital Integrated Circuit Design",
@@ -138,39 +128,35 @@
                 "Thermodynamics I"
             ]
         },
-        "app academy": {
-            "institution": "App Academy",
-            "area": "Software Development",
-            "studyType": "Certificate",
-            "startDate": "February 2020",
-            "endDate": "May 2020",
-            "courses": ["16 Week Software Engineering Immersive"]
+        "App Academy": {
+            "Area": "Software Development",
+            "Study Type": "Certificate",
+            "Start Date": "February 2020",
+            "End Date": "May 2020",
+            "Courses": ["16 Week Software Engineering Immersive"]
         }
     },
-    "skills": {
-            "programmingLanguages": ["Ruby", "JavaScript", "Python", "C/C++", "Java", "HTML5", "CSS3"],
-            "librariesFrameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery", "Node.js"],
-            "webTools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS"]
+    "Skills": {
+            "Programming Languages": ["Ruby", "JavaScript", "Python", "C/C++", "Java", "HTML5", "CSS3"],
+            "Libraries/Frameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery", "Node.js"],
+            "Web Tools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS"]
     },
-    "languages": {
-        "english": {
-            "language": "English",
-            "fluency": "Native speaker"
+    "Languages": {
+        "English": {
+            "Fluency": "Native speaker"
         },
-        "chinese": {
-            "language": "Chinese - Mandarin",
-            "fluency": "Elementary proficiency"
+        "Chinese - Mandarin": {
+            "Fluency": "Elementary proficiency"
         },
-        "indonesian": {
-            "language": "Bahasa Indonesia",
-            "fluency": "Native speaker"
+        "Indonesian": {
+            "Fluency": "Native speaker"
         }
     },
-    "interests": {
-            "basketball": "test123",
-            "boxing": "i destroy everyone... im kidding",
-            "golf": "trying to be pro but golf is hard",
-            "traveling": "love to travel the world and national parks",
-            "sports": "love to learn new sports"
+    "Interests": {
+            "Basketball": "test123",
+            "Boxing": "i destroy everyone... im kidding",
+            "Golf": "trying to be pro but golf is hard",
+            "Traveling": "love to travel the world and national parks",
+            "Sports": "love to learn new sports"
     }
 }
