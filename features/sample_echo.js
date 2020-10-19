@@ -47,7 +47,7 @@ module.exports = function(controller) {
     controller.hears( 'michael|jason', 'message,direct_message', async(bot, message) => {
         if(message.text.toLowerCase().includes(`michael`) && message.text.toLowerCase().includes("jason")){
             await bot.reply(message, {
-                "text": "You can not select Jason and Michael at the same time",
+                "text": "Please select Michael or Jason",
                 "quick_replies":
                     [
                         {
@@ -65,52 +65,184 @@ module.exports = function(controller) {
         }
         else if(message.text.toLowerCase().includes(`michael`)) {
             selected = "Michael"
-            await bot.reply(message, `${selected} is now selected`)
+            let vars = Object.keys(michael);
+            let qReplies = vars.map(el => 
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": "jason michael"
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
         } else if(message.text.toLowerCase().includes("jason")){
             selected = "Jason"
-            await bot.reply(message, `${selected} is now selected`)
+            let vars = Object.keys(jason);
+            let qReplies = vars.map(el => 
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": "jason michael"
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
         }
     })
 
     controller.hears('basics', 'message,direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, 'Please select Michael or Jason to proceed.')
+            // await bot.reply(message, 'Please select Michael or Jason to proceed.')
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
             // console.log("here")
-            await bot.reply(message, `${selected}'s basics are selected`)
+            // await bot.reply(message, `${selected}'s basics are selected`)
             let info = selected === "Jason" ? jason : michael;
             options = Object.keys(info['basics'])
+            let qReplies = options.map(el => 
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": `${selected}`
+            })
             key = "basics"
             key2 = false;
             console.log(options)
             // make button to show up
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
 
         }
     })
 
     controller.hears('profiles', 'message,direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, 'Please select Michael or Jason to proceed.')
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
             // console.log("here")
-            await bot.reply(message, `${selected}'s profiles are selected`)
+            // await bot.reply(message, `${selected}'s profiles are selected`)
             let info = selected === "Jason" ? jason : michael;
             options = Object.keys(info['profiles'])
+            let qReplies = options.map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": `${selected}`
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
             key = "profiles"
             key2 = false;
             // console.log(options)
             // make button to show up
+            
 
         }
     })
 
     controller.hears('work', 'message,direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, 'Please select Michael or Jason to proceed.')
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
-            await bot.reply(message, `${selected}'s work is selected.`)
+            // await bot.reply(message, `${selected}'s work is selected.`)
             let info = selected === 'Jason' ? jason : michael;
             options = Object.keys(info['work'])
+            let qReplies = options.map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": `${selected}`
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
             key = "work"
             key2 = false;
         }
@@ -118,11 +250,43 @@ module.exports = function(controller) {
 
     controller.hears('project', 'message,direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, 'Please select Michael or Jason to proceed.')
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
-            await bot.reply(message, `${selected}'s project is selected.`)
+            // await bot.reply(message, `${selected}'s project is selected.`)
             let info = selected === 'Jason' ? jason : michael;
             options = Object.keys(info['project'])
+            let qReplies = options.map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": `${selected}`
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
             key = "project"
             key2 = false;
         }
@@ -130,11 +294,43 @@ module.exports = function(controller) {
 
     controller.hears('education', 'message,direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, `Please select Michael or Jason to proceed.`)
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
-            await bot.reply(message, `${selected}'s education is selected.`)
+            // await bot.reply(message, `${selected}'s education is selected.`)
             let info = selected === 'Jason' ? jason : michael;
             options = Object.keys(info['education'])
+            let qReplies = options.map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": `${selected}`
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
             key = "education"
             key2 = false;
         }
@@ -142,11 +338,43 @@ module.exports = function(controller) {
 
     controller.hears('skills', 'message,direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, `Please select Michael or Jason to proceed.`)
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
-            await bot.reply(message, `${selected}'s skills are selected`)
+            // await bot.reply(message, `${selected}'s skills are selected`)
             let info = selected === "Jason" ? jason : michael;
             options = Object.keys(info['skills'])
+            let qReplies = options.map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": `${selected}`
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
             key = "skills"
             key2 = false;
         }
@@ -154,11 +382,43 @@ module.exports = function(controller) {
 
     controller.hears('languages', 'message, direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, `Please select Michael or Jason to proceed.`)
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
-            await bot.reply(message, `${selected}'s languages are selected`)
+            // await bot.reply(message, `${selected}'s languages are selected`)
             let info = selected === "Jason" ? jason : michael;
             options = Object.keys(info['languages'])
+            let qReplies = options.map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+            )
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "back",
+                "payload": `${selected}`
+            })
+            await bot.reply(message, {
+                "text": `${selected} is selected`,
+                "quick_replies": qReplies
+            })
             key = "languages"
             key2 = false;
         }
@@ -166,21 +426,55 @@ module.exports = function(controller) {
     
     controller.hears('interests', 'message, direct_message', async(bot, message) => {
         if (selected === '') {
-            await bot.reply(message, 'Please select Michael or Jason to proceed.')
+            await bot.reply(message, {
+                "text": "Please select Michael or Jason to proceed.",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         } else {
-            if(selected === "Jason") {
-                // Iterate through Jason's interests assign to string
-                let str = '';
-                await bot.reply(message, `${selected}'s interests are ${str}`);
-            } else {
-                // Iterate through Michael's interests assign to string
-                let str = '';
-                await bot.reply(message, `${selected}'s interests are ${str}`);
-                options = Object.keys(info['interests'])
+            // if(selected === "Jason") {
+            //     // Iterate through Jason's interests assign to string
+            //     let str = '';
+            //     await bot.reply(message, `${selected}'s interests are ${str}`);
+            // } else {
+            //     // Iterate through Michael's interests assign to string
+            //     let str = '';
+            //     await bot.reply(message, `${selected}'s interests are ${str}`);
+            //     options = Object.keys(info['interests'])
+            // }
+            let info = selected === "Jason" ? jason : michael;
+            options = Object.keys(info['interests'])
+            let qReplies = options.map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+                )
+                qReplies.push({
+                    "content_type": "text",
+                    // we can add a back/prev button on title 
+                    "title": "back",
+                    "payload": `${selected}`
+                })
+                await bot.reply(message, {
+                    "text": `${selected} is selected`,
+                    "quick_replies": qReplies
+                })
                 key = "interests"
                 key2 = false;
             }
-        }
     })
 
     controller.on('message,direct_message', async(bot, message) => {
@@ -207,14 +501,53 @@ module.exports = function(controller) {
 
                         options = Object.keys(info[key][key2])
                         console.log(options)
-                        await bot.reply(message, `${key2} is selected.`)
+                        // await bot.reply(message, `${key2} is selected.`)
+                        let qReplies = options.map(el =>
+                            ({
+                                "content_type": "text",
+                                "title": el,
+                                "payload": el
+                            })
+                        )
+                        qReplies.push({
+                            "content_type": "text",
+                            // we can add a back/prev button on title 
+                            "title": "back",
+                            "payload": `${selected}`
+                        })
+                        // key = key2
+                        // key2 = false;
+                        console.log(options)
+                        // make button to show up
+                        await bot.reply(message, {
+                            "text": `${selected} is selected`,
+                            "quick_replies": qReplies
+                        })
                     }  else {
                         if(key2){
                             let info = selected === 'Jason' ? jason : michael;
-                            await bot.reply(message, `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][key2][options[i]]}`)
+                            // await bot.reply(message, `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][key2][options[i]]}`)
+                            let qReplies = [{
+                                "content_type": "text",
+                                "title": "back",
+                                "payload": key2
+                            }]
+                            await bot.reply(message, {
+                                "text": `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][key2][options[i]]}`,
+                                "quick_replies": qReplies
+                            })
                         } else {
                             let info = selected === 'Jason' ? jason : michael;
-                            await bot.reply(message, `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][options[i]]}`)
+                            // await bot.reply(message, `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][options[i]]}`)
+                            let qReplies = [{
+                                "content_type": "text",
+                                "title": "back",
+                                "payload": key
+                            }]
+                            await bot.reply(message, {
+                                "text": `${options[i][0].toUpperCase() + options[i].slice(1)} is ${info[key][options[i]]}`,
+                                "quick_replies": qReplies
+                            })
                         }
                     }
                 }

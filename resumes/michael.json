@@ -164,7 +164,9 @@
         }
     },
     "interests": {
-      "name": ["reading", "gaming", "sports"]
+      "reading": "...example",
+      "gaming": "...example",
+      "sports": "...example"
     }
 }
 

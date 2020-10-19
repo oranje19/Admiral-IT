@@ -167,6 +167,10 @@
         }
     },
     "interests": {
-            "name": ["Basketball", "Boxing", "Golf", "Traveling", "Sports"]
+            "basketball": "test123",
+            "boxing": "i destroy everyone... im kidding",
+            "golf": "trying to be pro but golf is hard",
+            "traveling": "love to travel the world and national parks",
+            "sports": "love to learn new sports"
     }
 }
