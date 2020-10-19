@@ -46,7 +46,22 @@ module.exports = function(controller) {
 
     controller.hears( 'michael|jason', 'message,direct_message', async(bot, message) => {
         if(message.text.toLowerCase().includes(`michael`) && message.text.toLowerCase().includes("jason")){
-            await bot.reply(message, `Michael and Jason can not be selected at the same time`)
+            await bot.reply(message, {
+                "text": "You can not select Jason and Michael at the same time",
+                "quick_replies":
+                    [
+                        {
+                            "content_type": "text",
+                            "title": "Jason",
+                            "payload": "jason"
+                        },
+                        {
+                            "content_type": "text",
+                            "title": "Michael",
+                            "payload": "michael"
+                        }
+                    ]
+            })
         }
         else if(message.text.toLowerCase().includes(`michael`)) {
             selected = "Michael"
