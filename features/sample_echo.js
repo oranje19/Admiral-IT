@@ -14,7 +14,7 @@ module.exports = function(controller) {
     let key = "";
     let key2 = false;
     let options = "";
-    export let buttonSet = "names"
+    // export let buttonSet = "names"
 
     // controller.hears('test','message,direct_message', async(bot, message) => {
     //     await bot.reply(message, jason["work"][0]["company"]);
@@ -24,7 +24,25 @@ module.exports = function(controller) {
     //     await bot.reply(message, 'I heard a sample message.');
     // });
 
-    
+    // document.addEventListener("DOMContentLoaded", function () {
+        // let buttonReplies = document.getElementById("button_replies");
+        // console.log(buttonReplies)
+    // })
+
+    // let buttonReplies = document.getElementById("button_replies");
+    // console.log(buttonReplies)
+
+    // const buttonReplies = document.querySelector('#button_replies')
+
+    // buttonReplies.addEventListener('DOMContentLoaded', function() {
+    //     console.log(buttonReplies)
+    //     console.log("It goes through!")
+    // })
+
+
+    // botkit.hears(['hello'], 'message', async (bot, message) => {
+    //     await bot.beginDialog('welcome');
+    // });
 
     controller.hears( 'michael|jason', 'message,direct_message', async(bot, message) => {
         if(message.text.toLowerCase().includes(`michael`) && message.text.toLowerCase().includes("jason")){

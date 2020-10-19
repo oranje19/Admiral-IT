@@ -5,6 +5,7 @@
 const express = require('express');
 const path = require('path');
 
+// console.log(document)
 module.exports = function(controller) {
 
     // make public/index.html available as localhost/index.html

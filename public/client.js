@@ -21,6 +21,12 @@ var Botkit = {
     on: function (event, handler) {
         this.message_window.addEventListener(event, function (evt) {
             handler(evt.detail);
+            // console.log("here")
+            // console.log(message_window)
+            // message_window.querySelector("#button_replies").style.backgroundColor = "orange";
+            // let buttonReplies = message_window.getElementById("button_replies")
+            // console.log(buttonReplies)
+            // console.log("here")
         });
     },
     trigger: function (event, details) {
