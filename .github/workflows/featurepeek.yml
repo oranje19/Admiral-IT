@@ -1,5 +1,9 @@
 name: Build and ping FeaturePeek
 on: push
+version: 2
+main:
+  type: docker
+  port: 3000
 jobs:
   build:
     runs-on: ubuntu-latest
