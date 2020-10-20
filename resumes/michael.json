@@ -2,7 +2,7 @@
     "Basics": {
         "Name": "Michael Murry",
         "Label": "Software Engineer",
-        "Picture": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/716/medium/Michael_Murry_1.JPG?1583208264",
+        "Picture": "<img src='https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/716/medium/Michael_Murry_1.JPG?1583208264' alt='Michael' width='200' height='200'/>",
         "Email": "<a>michaelmurry49@gmail.com</a>",
         "Phone": "(209) 770-0349",
         "Website": "",
@@ -11,7 +11,7 @@
             "Address": "518 Sundown Ln",
             "City": "Sonora",
             "State": "California",
-            "Zip code": "CA 95370",
+            "Zip code": "95370",
             "Country": "US"
         }
     },
@@ -25,7 +25,7 @@
         }
     },
     "Work": {
-        "Get More Math": {
+        "GetMoreMath": {
             "Position": "Beta Tester",
             "Website": "<a href='https://getmoremath.com/'>https://getmoremath.com/</a>",
             "Start date": "September 2018",

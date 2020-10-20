@@ -123,7 +123,7 @@ module.exports = function(controller) {
                 "text": `${selected} is selected`,
                 "quick_replies": qReplies
             })
-        }
+        } 
     })
 
     controller.hears('basics', 'message,direct_message', async(bot, message) => {
@@ -502,15 +502,19 @@ module.exports = function(controller) {
     });
 
     controller.hears('', 'message, direct_message', async(bot, message) => {
+        console.log("hello: ", options)
         let temp = options[options.length - 1].length;
-        let new_msg = message.text[0].slice(0,1).toUpperCase() + message.text.slice(1).toLowerCase();
-        if (options[options.length-1].includes(new_msg)) {
+        // console.log("this is", temp)
+        // console.log(options)
+        let new_msg = message.text.toLowerCase();
+        let lowerCase = options[options.length-1].slice(0).map(option => option.toLowerCase())
+        if (lowerCase.includes(new_msg)) {
             console.log(options);
             for (let i = 0; i < temp; i++) {
                 // console.log(options[i]);
                 // console.log(i);
                 // console.log(message, message.text)
-                if (new_msg === options[options.length-1][i]) {
+                if (new_msg === lowerCase[i]) {
                     let info = selected === 'Jason' ? jason : michael;
                     if (typeof info[key][options[options.length-1][i]] === 'object' && info[key][options[options.length-1][i]] !== null) {
                         // for (let j = 0; j < options[i].length; j++) {
@@ -580,7 +584,42 @@ module.exports = function(controller) {
                 }
             }
         } else {
-            await bot.reply(message, `Input is not valid.`)
+            // await bot.reply(message, `Input is not valid.`)
+            let qReplies = options[options.length - 1].map(el =>
+                ({
+                    "content_type": "text",
+                    "title": el,
+                    "payload": el
+                })
+                )
+            if(!qReplies || qReplies.length === 0) qReplies = [
+                    {
+                        "content_type": "text",
+                        "title": "Jason",
+                        "payload": "jason"
+                    },
+                    {
+                        "content_type": "text",
+                        "title": "Michael",
+                        "payload": "michael"
+                    }
+                ];
+            tempReplies = qReplies
+
+            console.log("This is TEMP",tempReplies)
+            qReplies.push({
+                "content_type": "text",
+                // we can add a back/prev button on title 
+                "title": "&#8617",
+                "payload": `${selected}`
+            })
+            console.log("This is QREPLIES",qReplies)
+            // key = "Interests"
+            // key2 = false;
+            await bot.reply(message, {
+                "text": `Input is not valid. Please select or type a valid input.`,
+                "quick_replies": tempReplies
+            })
         }
     })
 
