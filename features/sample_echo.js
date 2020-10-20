@@ -13,7 +13,7 @@ module.exports = function(controller) {
     let selected = "";
     let key = "";
     let key2 = false;
-    let options = [[]];
+    let options;
     // export let buttonSet = "names"
 
     // controller.hears('test','message,direct_message', async(bot, message) => {
@@ -43,6 +43,25 @@ module.exports = function(controller) {
     // botkit.hears(['hello'], 'message', async (bot, message) => {
     //     await bot.beginDialog('welcome');
     // });
+
+    controller.hears('begin', 'message,direct_message', async(bot, message) => {
+        await bot.reply(message, {
+            "text": "Welcome, my name is Admiral IT... Here are my two candidates for a software engineering position...",
+            "quick_replies":
+                [
+                    {
+                        "content_type": "text",
+                        "title": "Jason",
+                        "payload": "jason"
+                    },
+                    {
+                        "content_type": "text",
+                        "title": "Michael",
+                        "payload": "michael"
+                    }
+                ]
+        })
+    })
 
     controller.hears( 'michael|jason', 'message,direct_message', async(bot, message) => {
         if(message.text.toLowerCase().includes(`michael`) && message.text.toLowerCase().includes("jason")){
@@ -484,13 +503,14 @@ module.exports = function(controller) {
 
     controller.hears('', 'message, direct_message', async(bot, message) => {
         let temp = options[options.length - 1].length;
-        if (options[options.length-1].includes(message.text)) {
+        let new_msg = message.text[0].slice(0,1).toUpperCase() + message.text.slice(1).toLowerCase();
+        if (options[options.length-1].includes(new_msg)) {
             console.log(options);
             for (let i = 0; i < temp; i++) {
                 // console.log(options[i]);
                 // console.log(i);
                 // console.log(message, message.text)
-                if (message.text === options[options.length-1][i]) {
+                if (new_msg === options[options.length-1][i]) {
                     let info = selected === 'Jason' ? jason : michael;
                     if (typeof info[key][options[options.length-1][i]] === 'object' && info[key][options[options.length-1][i]] !== null) {
                         // for (let j = 0; j < options[i].length; j++) {

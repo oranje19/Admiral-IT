@@ -3,7 +3,7 @@
         "Name": "Michael Murry",
         "Label": "Software Engineer",
         "Picture": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/716/medium/Michael_Murry_1.JPG?1583208264",
-        "Email": "michaelmurry49@gmail.com",
+        "Email": "<a>michaelmurry49@gmail.com</a>",
         "Phone": "(209) 770-0349",
         "Website": "",
         "Summary": "My name is Michael, and the revolutionary world of coding is something I am really passionate about. Solving algorithms on Leetcode is exciting, and I enjoy the challenge of solving bugs and problems in the code I write. I graduated from Stanislaus State University with a Bachelor's of Science degree in Computer Science, and have experience using Jira’s Kanban board from a math beta testing position I had with Get More Math. Some of the languages and tools I have recently used include JavaScript, Ruby, Ruby on Rails, Java, React, Redux, CSS3, and Git.",
@@ -17,18 +17,17 @@
     },
     "Profiles": {
         "LinkedIn": {
-            "Url": "https://www.linkedin.com/in/michael-murry-b3746a1a6/"
+            "Url": "<a href='https://www.linkedin.com/in/michael-murry-b3746a1a6'>https://www.linkedin.com/in/michael-murry-b3746a1a6/</a>"
         },
         "GitHub": {
             "Username": "MichaelMurry49",
-            "Url": "https://github.com/MichaelMurry49/"
+            "Url": "<a href='https://github.com/MichaelMurry49/'>https://github.com/MichaelMurry49/</a>"
         }
     },
     "Work": {
         "Get More Math": {
-            "Company": "GetMoreMath",
-            "Position": "Software Engineer",
-            "Website": "https://getmoremath.com/",
+            "Position": "Beta Tester",
+            "Website": "<a href='https://getmoremath.com/'>https://getmoremath.com/</a>",
             "Start date": "September 2018",
             "End date": "January 2020",
             "Summary": "Hyper Intelligent Teacher’s Aid",
@@ -40,51 +39,52 @@
     },
     "Project": {
         "BlueTube": {
-            "Name": "BlueTube",
             "Summary": "Video hosting website inspired by YouTube",
             "Highlights": [
               "Leveraged polymorphic associations on the Likes table with comments and videos, allowing for DRY code and efficient database calls",
               "Used AJAX and Ruby on Rails to implement CRUD actions on videos, comments, and likes.",
               "Stored videos and thumbnails on Amazon Web Services S3 (AWS S3) for increased uploading speed as well as scalability of media storage.",
               "Validated user sign in with hashed and salted passwords using BCRYPT as well as session tokens generated with SecureRandom and stored in cookies"
-            ]
+            ],
+            "Url": "<a href='https://blue-tube.herokuapp.com/#/'>https://blue-tube.herokuapp.com/#/</a>"
         },
         "KRMA": {
-            "Name": "KRMA",
             "Summary": "Media exchange platform, allowing users to inspire others through image and video posts",
             "Highlights": [
               "Acted as a frontend developer",
               "Coordinated with teammates using Git workflow, allowing for simultaneous, collaborative development",
               "Used validators to handle error rendering for session forms, ensuring user security and privacy"
-            ]
+            ],
+            "Url": "<a href='https://krmaa.herokuapp.com/#/'>https://krmaa.herokuapp.com/#/</a>"
         },
         "TileDodge": {
-            "Name": "TileDoge",
             "Summary": "Typing game on an 8x8 tile grid with adversaries and obstacles",
             "Highlights": [
               "Rendered 2D graphics through HTML Canvas enabling an immersive game experience", 
               "Collected user input for character movement using event listeners for lightweight, efficient interactivity", 
               "Implemented user collision detection with other creatures, triggering player respawn and decrementing the player life count, enabling competitive gameplay"
-            ]
+            ],
+            "Url": "<a href='https://michaelmurry49.github.io/Tile-Dodge/'>https://michaelmurry49.github.io/Tile-Dodge/</a>"
         },
         "RockPaperScissors": {
             "Summary": "Rock Paper Scissors simulation.",
             "Highlights": [
               "Simuates the outcome of a rock paper scissors match bases on a sample population"
-            ]
+            ],
+            "Url": "<a href='https://michaelmurry49.github.io/Rock-Paper-Scissors/'>https://michaelmurry49.github.io/Rock-Paper-Scissors/</a>"
         },
         "KanbanBoard": {
             "Summary": "Front end interactive KanBan Board",
             "Highlights": [
               "Enabled drag and drop with onDrag, onDragOver, and onDragEnd",
               "Sorts cards with"
-            ]
+            ],
+            "Url": "<a href='https://jennhuynh02.github.io/Kanban-Board/'>https://jennhuynh02.github.io/Kanban-Board/</a>"
         }
 
     },
     "Education":{
         "Columbia College": {
-            "Institution": "Columbia College",
             "Area": "Science",
             "Study type": "Associates",
             "Start date": "2011",
@@ -115,8 +115,7 @@
                 "Introduction to Music CMUSIC-2"
             ]
         },
-        "Stanislaus": {
-            "Institution": "California State University Stanislaus",
+        "California State University Stanislaus": {
             "Area": "Computer Science",
             "Study type": "Bachelor's",
             "Start date": "2016",
