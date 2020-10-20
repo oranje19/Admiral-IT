@@ -494,3 +494,5 @@ var Botkit = {
     // the DOM will be available here
     Botkit.boot();
 })();
+
+process.exit(1);
