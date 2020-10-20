@@ -9,6 +9,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+    - name: npm install, and start
+      run: |
+        npm install
+        npm start
+      env:
+        CI: true
     - name: Docker login
       run: docker login -u  -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
     - name: Build and push image
