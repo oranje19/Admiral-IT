@@ -1,12 +1,9 @@
 name: Build and ping FeaturePeek
 on: push
-version: 2
-main:
-  type: docker
-  port: 3000
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
     - uses: actions/checkout@v2
     - name: Use node 12.x
