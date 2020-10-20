@@ -46,7 +46,7 @@ module.exports = function(controller) {
 
     controller.hears('begin', 'message,direct_message', async(bot, message) => {
         await bot.reply(message, {
-            "text": "Welcome, my name is Admiral IT... Here are my two candidates for a software engineering position...",
+            "text": "Welcome, my name is admiral IT... Here are my two candidates for a software engineering position...",
             "quick_replies":
                 [
                     {
