@@ -140,9 +140,9 @@
         }
     },
     "Skills": {
-            "Programming Languages": ["Ruby", "JavaScript", "Python", "C/C++", "Java", "HTML5", "CSS3"],
-            "Libraries/Frameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery", "Node.js"],
-            "Web Tools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS"]
+            "Programming Languages": "Ruby, JavaScript, Python, C/C++, Java, HTML5 and CSS3",
+            "Libraries/Frameworks": "React, Redux, Node, Ruby on Rails, jQuery and Node.js",
+            "Web Tools": "Git, Heroku, MongoDB, PostgreSQL and AWS"
     },
     "Languages": {
         "English": {
