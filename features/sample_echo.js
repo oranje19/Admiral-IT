@@ -18,7 +18,7 @@ module.exports = function(controller) {
     let level1 = [];
     let level2 = [];
     let level3 = [];
-    let keys = []
+    let keys = [];
     let level = 0;
     // export let buttonSet = "names"
 
