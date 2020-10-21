@@ -121,9 +121,9 @@ a.button:hover {
 
 /* chat client */
 #message_window {
-  background: #FFFFFF;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
+  background: #264653;
+  border-left: 1px solid #264653;
+  border-right: 1px solid #264653;
   /*height: 500px;
   width: 320px;*/
   height: 100%;
@@ -158,7 +158,8 @@ a.button:hover {
   border-bottom: 1px solid #CCC;
   font-size: 14px;
   padding: 0.25rem;
-  color: #666;
+  color: #f4a261;
+  background: #264653;
 }
 #message_window .powered_by a {
   text-decoration: none;
@@ -181,6 +182,7 @@ a.button:hover {
 #message_window footer {
   border-top: 1px solid #CCC;
   padding: 0.25rem;
+  background: #264653;
 }
 #message_window footer input[type=text] {
   flex-grow: 1;
@@ -193,7 +195,7 @@ a.button:hover {
   background: none;
   border: 0;
   cursor: pointer;
-  color: blue;
+  color: #e9c46a;
   font-weight: bold;
 }
 #message_window form {
@@ -255,12 +257,14 @@ a.button:hover {
   overflow-x: auto;
   flex-shrink: 0;
   -webkit-overflow-scrolling: touch;
+  background: #2a9d8f;
   /* Lets it scroll lazy */
 }
 #message_window #message_replies ul {
   list-style-type: none;
   margin: 0px auto;
   padding: 0;
+  background: #e9c46a;
 }
 #message_window #message_replies ul li {
   display: inline-block;

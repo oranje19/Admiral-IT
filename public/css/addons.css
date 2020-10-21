@@ -13,6 +13,28 @@
 }
 
 #start_button:hover {
-    background: #2a9d8f;
+    background: #e9c46a;
     color: #264653;
 }
+
+section {
+    background: #2a9d8f;
+}
+
+a {
+    color:#a8dadc;
+}
+
+form {
+    background-color: #264653;
+}
+
+input {
+    color: #f4a261;
+    background: #264653;
+}
+
+/* #send_button {
+    color: #e9c46a;
+    background: #e9c46a;
+} */
