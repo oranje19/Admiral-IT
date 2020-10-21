@@ -198,6 +198,9 @@ a.button:hover {
   color: #e9c46a;
   font-weight: bold;
 }
+#message_window footer button:hover {
+  color: #f4a261;
+}
 #message_window form {
   display: flex;
   margin: 0;
