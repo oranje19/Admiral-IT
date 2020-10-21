@@ -14,6 +14,12 @@ module.exports = function(controller) {
     let key = "";
     let key2 = false;
     let options;
+    let level0 = ["Jason", "Michael"]
+    let level1 = [];
+    let level2 = [];
+    let level3 = [];
+    let keys = []
+    let level = 0;
     // export let buttonSet = "names"
 
     // controller.hears('test','message,direct_message', async(bot, message) => {
@@ -61,12 +67,13 @@ module.exports = function(controller) {
                     }
                 ]
         })
+        level = 0
     })
 
     controller.hears( 'michael|jason', 'message,direct_message', async(bot, message) => {
         if(message.text.toLowerCase().includes(`michael`) && message.text.toLowerCase().includes("jason")){
             await bot.reply(message, {
-                "text": "Please select Michael or Jason",
+                "text": "Please select Jason or Michael",
                 "quick_replies":
                     [
                         {
@@ -123,7 +130,8 @@ module.exports = function(controller) {
                 "text": `${selected} is selected`,
                 "quick_replies": qReplies
             })
-        } 
+        }
+        level = 1 
     })
 
     controller.hears('basics', 'message,direct_message', async(bot, message) => {
@@ -173,6 +181,7 @@ module.exports = function(controller) {
             })
 
         }
+        level = 1 
     })
 
     controller.hears('profiles', 'message,direct_message', async(bot, message) => {
@@ -222,6 +231,7 @@ module.exports = function(controller) {
             
 
         }
+        level = 1 
     })
 
     controller.hears('work', 'message,direct_message', async(bot, message) => {
@@ -266,6 +276,7 @@ module.exports = function(controller) {
                 "quick_replies": qReplies
             })
         }
+        level = 1 
     })
 
     controller.hears('project', 'message,direct_message', async(bot, message) => {
@@ -310,6 +321,7 @@ module.exports = function(controller) {
                 "quick_replies": qReplies
             })
         }
+        level = 1 
     })
 
     controller.hears('education', 'message,direct_message', async(bot, message) => {
@@ -354,6 +366,7 @@ module.exports = function(controller) {
                 "quick_replies": qReplies
             })
         }
+        level = 1 
     })
 
     controller.hears('skills', 'message,direct_message', async(bot, message) => {
@@ -398,6 +411,7 @@ module.exports = function(controller) {
                 "quick_replies": qReplies
             })
         }
+        level = 1 
     })
 
     controller.hears('languages', 'message, direct_message', async(bot, message) => {
@@ -442,6 +456,7 @@ module.exports = function(controller) {
                 "quick_replies": qReplies
             })
         }
+        level = 1 
     })
     
     controller.hears('interests', 'message, direct_message', async(bot, message) => {
@@ -495,6 +510,7 @@ module.exports = function(controller) {
                     "quick_replies": qReplies
                 })
             }
+            level = 1 
     })
 
     controller.on('message,direct_message', async(bot, message) => {
