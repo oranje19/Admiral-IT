@@ -517,6 +517,10 @@ module.exports = function(controller) {
         await bot.reply(message, `Echo: ${ message.text }`);
     });
 
+    controller.hears('back', 'message, direct_message', async(bot, message) => {
+        level--;
+        let info = 
+    })
     controller.hears('', 'message, direct_message', async(bot, message) => {
         console.log("hello: ", options)
         let temp = options[options.length - 1].length;
