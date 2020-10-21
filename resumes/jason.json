@@ -35,11 +35,8 @@
             "Start Date": "September 2019",
             "End Date": "January 2020",
             "Summary": "A $100M multi-stage venture capital fund that focuses across Consumer, Enterprise, Fintech, FrontierTech, and HealthTech",
-            "Highlights": [
-                "Sourced investment opportunities using a structured approach to increasing deal flow velocity in both quantity and quality by doing weekly sprints using multiple deal flow channels.",
-                "Developed investment theses around various industry verticals, reviewed pitch decks, scheduled meetings with startups and investors, and presented top investment opportunities at weekly Partner's Meeting and Investment Committees.",
-                "Conducted quantitative and qualitative deep due diligence including: Market sizing, team's ability to execute, go-to-market strategy, key risks, business model, key metrics, capital efficiency, financial modeling, competitive landscape, customer and investor interviews, cap table and waterfall analysis, term sheets and investment documents."
-            ]
+            "Highlights": 
+                "- Sourced investment opportunities using a structured approach to increasing deal flow velocity in both quantity and quality by doing weekly sprints using multiple deal flow channels.\n- Developed investment theses around various industry verticals, reviewed pitch decks, scheduled meetings with startups and investors, and presented top investment opportunities at weekly Partner's Meeting and Investment Committees.\n- Conducted quantitative and qualitative deep due diligence including: Market sizing, team's ability to execute, go-to-market strategy, key risks, business model, key metrics, capital efficiency, financial modeling, competitive landscape, customer and investor interviews, cap table and waterfall analysis, term sheets and investment documents."
         },
         "Tunas Jaya Irja": {
             "Position": "Consultant",
@@ -47,41 +44,28 @@
             "Start Date": "July 2017",
             "End Date": "July 2018",
             "Summary": "A multi-conglomerate holding company in Indonesia that operates in Construction, Electrical Manufacturing, and Energy.",
-            "Highlights": [
-                "Supported clients in project planning, cost estimation, and solving structural issues.",
-                "Coordinated project kickoff meetings to align contractors, store management, and team members.",
-                "Configured payroll and timesheet tracking to report project labor costs and monitor overhead costs.",
-                "Implemented a performance-driven, employee incentive program that saves the company 5% of its operational costs."
-            ]
+            "Highlights": 
+                "- Supported clients in project planning, cost estimation, and solving structural issues.\n- Coordinated project kickoff meetings to align contractors, store management, and team members.\n- Configured payroll and timesheet tracking to report project labor costs and monitor overhead costs.\n- Implemented a performance-driven, employee incentive program that saves the company 5% of its operational costs."
         }
     },
     "Project": {
         "Grande": {
             "Summary": "Grande is a Medium inspired app that lets users publish their own stories that can be viewed and clapped by other users.",
             "Website": "<a href='http://grandestar.herokuapp.com/#/'>http://grandestar.herokuapp.com/#/</a>",
-            "Highlights": [
-                "Ensured user privacy and autonomy through frontend and backend authentication measures and React router, only allowing logged in users to have access to create, edit and delete their content.",
-                "Leveraged CSS flexbox, and React modal for an appealing and dynamic layout to the page and applying custom design and functionality to the react library for smooth user experience in rich text editing.",
-                "Stored images on Amazon Web Services S3 (AWS) for website speed optimization, reducing server load and allowing web apps to scale gracefully."
-            ]
+            "Highlights": 
+                "- Ensured user privacy and autonomy through frontend and backend authentication measures and React router, only allowing logged in users to have access to create, edit and delete their content.\n- Leveraged CSS flexbox, and React modal for an appealing and dynamic layout to the page and applying custom design and functionality to the react library for smooth user experience in rich text editing.\n- Stored images on Amazon Web Services S3 (AWS) for website speed optimization, reducing server load and allowing web apps to scale gracefully."
         },
         "NiteTrader": {
             "Summary": "NiteTrader is a stock simulator app where users will be able to but/sell stock much similar to the actual stock market.",
             "Website": "<a href='https://nitetrader.herokuapp.com/#/'>https://nitetrader.herokuapp.com/#/</a>",
-            "Highlights": [
-                "Built features where users can see their portfolio, watchlists, and buy/sell stock according to the stock hours.",
-                "Implemented user authentication using MongoDB, Express, React, Node by utilizing Json Web Token (JWT).",
-                "Leveraged the AlphaVantage stock API to fetch real-time, latest stock price to update users' portfolios and buy/sell."
-            ]
+            "Highlights": 
+                "- Built features where users can see their portfolio, watchlists, and buy/sell stock according to the stock hours.\n- Implemented user authentication using MongoDB, Express, React, Node by utilizing Json Web Token (JWT).\n- Leveraged the AlphaVantage stock API to fetch real-time, latest stock price to update users' portfolios and buy/sell."
         },
         "forty96": {
             "Summary": "forty96 is a puzzle game inspired by the 2048 game where players will slide blocks to add up numbers until it reaches 4096,",
             "Website": "<a href='https://oranje19.github.io/forty96/'>https://oranje19.github.io/forty96/</a>",
-            "Highlights": [
-                "Used vanilla JavaScript to create the whole app while maintaing the rigorous implementation for the app to work.",
-                "Designed original UI using HTML5, CSS, and JavaScript to handle the movement of the game.",
-                "Constructed the game to be unique to allow users to add tile without moving any tiles."
-            ]
+            "Highlights": 
+                "- Used vanilla JavaScript to create the whole app while maintaing the rigorous implementation for the app to work.\n- Designed original UI using HTML5, CSS, and JavaScript to handle the movement of the game.\n- Constructed the game to be unique to allow users to add tile without moving any tiles."
         }
     },
     "Education": {
@@ -90,46 +74,16 @@
             "Study Type": "Master",
             "Start Date": "August 2018",
             "End Date": "May 2019",
-            "Courses": [
-                "Marketing",
-                "Judgment and Decision Making",
-                "Creativity and Innovation",
-                "Investment Theory - Applications",
-                "Microeconomics",
-                "Consumer Behavior",
-                "Business Strategy",
-                "Management Essentials",
-                "Accounting",
-                "Strategic Management",
-                "Organizational Behavior"
-            ]
+            "Courses": 
+                "- Marketin\n- Judgment and Decision Making\n- Creativity and Innovation\n- Investment Theory - Applications\n- Microeconomics\n- Consumer Behavior\n- Business Strategy\n- Management Essentials\n- Accounting\n- Strategic Management\n- Organizational Behavior"
         },
         "Santa Clara Univeristy": {
             "Area": "Electrical Engineering",
             "Study Type": "Bachelor",
             "Start Date": "January 2015",
             "End Date": "June 2017",
-            "Courses": [
-                "Abstract Data Types & Structures",
-                "Control Systems",
-                "Digital Integrated Circuit Design",
-                "Digital System Architectures",
-                "Electric Circuits I",
-                "Electric Circuits II",
-                "Electromagnetics I",
-                "Electronic Circuits I",
-                "Energy Storage Systems",
-                "Ethics in Technology",
-                "Introduction to Logic Design",
-                "Linear Systems",
-                "Mechanics I: Statics",
-                "Mechatronics",
-                "Power System Analysis",
-                "Power System Stability & Control",
-                "Project Management",
-                "Semiconductor Devices",
-                "Thermodynamics I"
-            ]
+            "Courses": 
+                "- Abstract Data Types & Structures\n- Control Systems\n- Digital Integrated Circuit Design\n- Digital System Architectures\n- Electric Circuits I\n- Electric Circuits II\n- Electromagnetics I\n- Electronic Circuits I\n- Energy Storage Systems\n- Ethics in Technology\n- Introduction to Logic Design\n- Linear Systems\n- Mechanics I: Statics\n- Mechatronics\n- Power System Analysis\n- Power System Stability & Control\n- Project Management\n- Semiconductor Devices\n- Thermodynamics I"
         },
         "App Academy": {
             "Area": "Software Development",
@@ -140,9 +94,9 @@
         }
     },
     "Skills": {
-            "Programming Languages": "Ruby, JavaScript, Python, C/C++, Java, HTML5 and CSS3",
-            "Libraries/Frameworks": "React, Redux, Node, Ruby on Rails, jQuery and Node.js",
-            "Web Tools": "Git, Heroku, MongoDB, PostgreSQL and AWS"
+            "Programming": "- Ruby\n- JavaScript\n- Python\n- C/C++\n- Java\n- HTML5\n- CSS3",
+            "Technologies": "- React\n- Redux\n- Node\n- Ruby on Rails\n- jQuery\n- Node.js",
+            "Web Tools": "- Git\n- Heroku\n- MongoDB\n- PostgreSQL\n- AWS"
     },
     "Languages": {
         "English": {

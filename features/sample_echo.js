@@ -228,7 +228,7 @@ module.exports = function(controller) {
         let temp = options[level];
         let new_msg = message.text.toLowerCase();
         console.log(options, " | ", level)
-        let lowerCase = temp.slice(0).map(option => option.toLowerCase())
+        let lowerCase = temp ? temp.map(option => option.toLowerCase()) : "";
         if (lowerCase.includes(new_msg)) {
             console.log(options);
             for (let i = 0; i < temp.length; i++) {
@@ -289,25 +289,16 @@ module.exports = function(controller) {
             }
         } else {
             // await bot.reply(message, `Input is not valid.`)
-            let qReplies = options[level].map(el =>
+            console.log(options, level, "this is invalid tracker")
+            console.log("THIS IS THE CURRENT OPTIONS",options[level])
+            let qReplies = options[level] ? options[level].map(el =>
                 ({
                     "content_type": "text",
                     "title": el,
                     "payload": el
                 })
-                )
-            if(!qReplies || qReplies.length === 0) qReplies = [
-                    {
-                        "content_type": "text",
-                        "title": "Jason",
-                        "payload": "jason"
-                    },
-                    {
-                        "content_type": "text",
-                        "title": "Michael",
-                        "payload": "michael"
-                    }
-                ];
+                ) : [];
+            if(!qReplies || qReplies.length === 0) qReplies = [];
             tempReplies = qReplies
 
             console.log("This is TEMP",tempReplies)
