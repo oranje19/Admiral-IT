@@ -2,9 +2,6 @@ name: Build and ping FeaturePeek
 on: push
 jobs:
   build:
-    - run:
-      name: Build assets
-      command: npm build
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
@@ -13,10 +10,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-
     - name: Install dependencies
       run: npm install
     - name: Build
-      run: npm start
+      run: npm build
     - name: Ping FeaturePeek
       run: bash <(curl -s https://peek.run/ci)
