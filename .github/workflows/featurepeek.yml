@@ -4,7 +4,7 @@ jobs:
   build:
     - run:
       name: Build assets
-      command: yarn build
+      command: npm build
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
