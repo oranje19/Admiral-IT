@@ -2,6 +2,9 @@ name: Build and ping FeaturePeek
 on: push
 jobs:
   build:
+    - run:
+      name: Build assets
+      command: yarn build
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
