@@ -1,4 +1,5 @@
 version: 2
 main:
-  type: docker
-  port: 3000
+  type: static
+  path: /build
+  spa: true
