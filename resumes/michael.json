@@ -144,12 +144,19 @@
                 "Professional Ethics PHIL 4401"
 
             ]
+        },
+        "App Academy": {
+            "Area": "Software Development",
+            "Study Type": "Certificate",
+            "Start Date": "2020",
+            "End Date": "2020",
+            "Courses": ["16 Week Immersive Software Engineering Course"]
         }
     },
     "Skills": {
-        "Languages": ["JavaScript", "Ruby", "Java", "HTML5", "CSS3"],
-        "Libraries/Frameworks": ["React", "Redux", "Node", "Ruby on Rails", "jQuery"],
-        "Web tools": ["Git", "Heroku", "MongoDB", "PostgreSQL", "AWS3"] 
+        "Languages": "JavaScript, Ruby, Java, HTML5 and CSS3",
+        "Libraries/Frameworks": "React, Redux, Node, Ruby on Rails and jQuery",
+        "Web tools": "Git, Heroku, MongoDB, PostgreSQL and AWS3"
     },
     "Languages": {
         "English": {
