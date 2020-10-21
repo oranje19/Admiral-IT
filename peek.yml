@@ -1,5 +1,4 @@
 version: 2
 main:
-  type: static
-  path: /public
-  spa: false
+  type: docker
+  port: 3000
