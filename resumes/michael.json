@@ -17,17 +17,17 @@
     },
     "Profiles": {
         "LinkedIn": {
-            "Url": "<a href='https://www.linkedin.com/in/michael-murry-b3746a1a6'>https://www.linkedin.com/in/michael-murry-b3746a1a6/</a>"
+            "Url": "<a href='https://www.linkedin.com/in/michael-murry-b3746a1a6' target='_blank'>https://www.linkedin.com/in/michael-murry-b3746a1a6/</a>"
         },
         "GitHub": {
             "Username": "MichaelMurry49",
-            "Url": "<a href='https://github.com/MichaelMurry49/'>https://github.com/MichaelMurry49/</a>"
+            "Url": "<a href='https://github.com/MichaelMurry49/' target='_blank'>https://github.com/MichaelMurry49/</a>"
         }
     },
     "Work": {
         "GetMoreMath": {
             "Position": "Beta Tester",
-            "Website": "<a href='https://getmoremath.com/'>https://getmoremath.com/</a>",
+            "Website": "<a href='https://getmoremath.com/' target='_blank'>https://getmoremath.com/</a>",
             "Start date": "September 2018",
             "End date": "January 2020",
             "Summary": "Hyper Intelligent Teacher’s Aid",
@@ -39,27 +39,27 @@
             "Summary": "Video hosting website inspired by YouTube",
             "Highlights": 
               "- Leveraged polymorphic associations on the Likes table with comments and videos, allowing for DRY code and efficient database calls\n- Used AJAX and Ruby on Rails to implement CRUD actions on videos, comments, and likes\n- Stored videos and thumbnails on Amazon Web Services S3 (AWS S3) for increased uploading speed as well as scalability of media storage\n- Validated user sign in with hashed and salted passwords using BCRYPT as well as session tokens generated with SecureRandom and stored in cookies",
-            "Url": "<a href='https://blue-tube.herokuapp.com/#/'>https://blue-tube.herokuapp.com/#/</a>"
+            "Url": "<a href='https://blue-tube.herokuapp.com/#/' target='_blank'>https://blue-tube.herokuapp.com/#/</a>"
         },
         "KRMA": {
             "Summary": "Media exchange platform, allowing users to inspire others through image and video posts",
             "Highlights": "- Acted as a frontend developer\n- Coordinated with teammates using Git workflow, allowing for simultaneous, collaborative development\n- Used validators to handle error rendering for session forms, ensuring user security and privacy\n",
-            "Url": "<a href='https://krmaa.herokuapp.com/#/'>https://krmaa.herokuapp.com/#/</a>"
+            "Url": "<a href='https://krmaa.herokuapp.com/#/' target='_blank'>https://krmaa.herokuapp.com/#/</a>"
         },
         "TileDodge": {
             "Summary": "Typing game on an 8x8 tile grid with adversaries and obstacles",
             "Highlights": "Rendered 2D graphics through HTML Canvas enabling an immersive game experience\n- Collected user input for character movement using event listeners for lightweight, efficient interactivity\n- Implemented user collision detection with other creatures, triggering player respawn and decrementing the player life count, enabling competitive gameplay\n",
-            "Url": "<a href='https://michaelmurry49.github.io/Tile-Dodge/'>https://michaelmurry49.github.io/Tile-Dodge/</a>"
+            "Url": "<a href='https://michaelmurry49.github.io/Tile-Dodge/' target='_blank'>https://michaelmurry49.github.io/Tile-Dodge/</a>"
         },
         "RockPaperScissors": {
             "Summary": "Rock Paper Scissors simulation.",
             "Highlights": "- Simuates the outcome of a rock paper scissors match bases on a sample population",
-            "Url": "<a href='https://michaelmurry49.github.io/Rock-Paper-Scissors/'>https://michaelmurry49.github.io/Rock-Paper-Scissors/</a>"
+            "Url": "<a href='https://michaelmurry49.github.io/Rock-Paper-Scissors/ target='_blank''>https://michaelmurry49.github.io/Rock-Paper-Scissors/</a>"
         },
         "KanbanBoard": {
             "Summary": "Front end interactive KanBan Board",
             "Highlights": "Enabled drag and drop with onDrag, onDragOver, and onDragEnd",
-            "Url": "<a href='https://jennhuynh02.github.io/Kanban-Board/'>https://jennhuynh02.github.io/Kanban-Board/</a>"
+            "Url": "<a href='https://jennhuynh02.github.io/Kanban-Board/' target='_blank'>https://jennhuynh02.github.io/Kanban-Board/</a>"
         }
 
     },
@@ -99,8 +99,8 @@
         }
     },
     "Interests": {
-      "Reading": "...example",
-      "Gaming": "...example",
-      "Sports": "...example"
+      "Reading": "I enjoy reading a good book",
+      "Gaming": "Even though I am not very good it is fun to play online games like League of Legends",
+      "Sports": "I enjoy playing and watching sports. Go 49ers!"
     }
 }
