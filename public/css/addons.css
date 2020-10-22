@@ -130,13 +130,14 @@ input {
     border-radius: 4px;
     /* margin-right: 70px; */
     /* padding: 15px 5px 15px 5px; */
-    background-color: papayawhip;
+    /* background-color: papayawhip; */
 }
 
 .footer-contact > img {
     height: 200;
     width: 200;
     border-radius: 150px;
+    background: transparent;
 }
 
 .footer-media {
