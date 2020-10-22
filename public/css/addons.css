@@ -84,8 +84,18 @@ input {
 #landing-body {
     background: #f4a261;
     width: 100%;
+    color: #264653;
 }
 
+#landing-body > div {
+    font-size: 45px;
+}
+
+
+
+#landing-body > .click-me {
+    font-size: 45px;
+}
 .landing-button {
     height: 75;
     width: 75;
@@ -125,7 +135,7 @@ input {
     /* margin-top: 300px; */
     /* margin-left: 50px; */
     width: 170px;
-    height: 30%;
+    /* height: 30%; */
     margin-top: 2%;
     border-radius: 4px;
     /* margin-right: 70px; */
