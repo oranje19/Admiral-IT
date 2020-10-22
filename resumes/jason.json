@@ -5,7 +5,7 @@
         "Picture": "<img src='https://media-exp1.licdn.com/dms/image/C5603AQHq0XoSmVfZGg/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=RvgipBZwB1FB6tPXkSEp7sHwj38u-Gpbjh9aIWQqZTc' alt='Jason' width='200' height='200' >",
         "Email": "<a>jasonwintery@gmail.com</a>",
         "Phone": "(415) 535-7268",
-        "Website": "<a href='http://www.jasonwintery.com'>http://www.jasonwintery.com</a>",
+        "Website": "<a href='http://www.jasonwintery.com' target='_blank'>http://www.jasonwintery.com</a>",
         "Summary": "A summary of Jason Wintery...",
         "Location": {
             "Address": "18 10th St",
@@ -18,11 +18,11 @@
     "Profiles": {
         "LinkedIn": {
             "Name": "Jason Wintery",
-            "Url": "<a href='https://www.linkedin.com/in/jasonwintery'>https://www.linkedin.com/in/jasonwintery</a>"
+            "Url": "<a href='https://www.linkedin.com/in/jasonwintery' target='_blank'>https://www.linkedin.com/in/jasonwintery</a>"
         },
         "GitHub": {
             "Username": "oranje19",
-            "Url": "<a href='https://github.com/oranje19'>https://github.com/oranje19</a>"
+            "Url": "<a href='https://github.com/oranje19' target='_blank'>https://github.com/oranje19</a>"
         },
         "Portfolio": {
             "Url": ""
@@ -31,7 +31,7 @@
     "Work": {
         "Family Office": {
             "Position": "Associate",
-            "Website": "<a href='https://www.vuventurepartners.com'>https://www.vuventurepartners.com</a>",
+            "Website": "<a href='https://www.vuventurepartners.com' target='_blank'>https://www.vuventurepartners.com</a>",
             "Start Date": "September 2019",
             "End Date": "January 2020",
             "Summary": "A $100M multi-stage venture capital fund that focuses across Consumer, Enterprise, Fintech, FrontierTech, and HealthTech",
@@ -51,19 +51,19 @@
     "Project": {
         "Grande": {
             "Summary": "Grande is a Medium inspired app that lets users publish their own stories that can be viewed and clapped by other users.",
-            "Website": "<a href='http://grandestar.herokuapp.com/#/'>http://grandestar.herokuapp.com/#/</a>",
+            "Website": "<a href='http://grandestar.herokuapp.com/#/' target='_blank'>http://grandestar.herokuapp.com/#/</a>",
             "Highlights": 
                 "- Ensured user privacy and autonomy through frontend and backend authentication measures and React router, only allowing logged in users to have access to create, edit and delete their content.\n- Leveraged CSS flexbox, and React modal for an appealing and dynamic layout to the page and applying custom design and functionality to the react library for smooth user experience in rich text editing.\n- Stored images on Amazon Web Services S3 (AWS) for website speed optimization, reducing server load and allowing web apps to scale gracefully."
         },
         "NiteTrader": {
             "Summary": "NiteTrader is a stock simulator app where users will be able to but/sell stock much similar to the actual stock market.",
-            "Website": "<a href='https://nitetrader.herokuapp.com/#/'>https://nitetrader.herokuapp.com/#/</a>",
+            "Website": "<a href='https://nitetrader.herokuapp.com/#/' target='_blank'>https://nitetrader.herokuapp.com/#/</a>",
             "Highlights": 
                 "- Built features where users can see their portfolio, watchlists, and buy/sell stock according to the stock hours.\n- Implemented user authentication using MongoDB, Express, React, Node by utilizing Json Web Token (JWT).\n- Leveraged the AlphaVantage stock API to fetch real-time, latest stock price to update users' portfolios and buy/sell."
         },
         "forty96": {
             "Summary": "forty96 is a puzzle game inspired by the 2048 game where players will slide blocks to add up numbers until it reaches 4096,",
-            "Website": "<a href='https://oranje19.github.io/forty96/'>https://oranje19.github.io/forty96/</a>",
+            "Website": "<a href='https://oranje19.github.io/forty96/' target='_blank'>https://oranje19.github.io/forty96/</a>",
             "Highlights": 
                 "- Used vanilla JavaScript to create the whole app while maintaing the rigorous implementation for the app to work.\n- Designed original UI using HTML5, CSS, and JavaScript to handle the movement of the game.\n- Constructed the game to be unique to allow users to add tile without moving any tiles."
         }
@@ -75,7 +75,7 @@
             "Start Date": "August 2018",
             "End Date": "May 2019",
             "Courses": 
-                "- Marketin\n- Judgment and Decision Making\n- Creativity and Innovation\n- Investment Theory - Applications\n- Microeconomics\n- Consumer Behavior\n- Business Strategy\n- Management Essentials\n- Accounting\n- Strategic Management\n- Organizational Behavior"
+                "- Marketing\n- Judgment and Decision Making\n- Creativity and Innovation\n- Investment Theory - Applications\n- Microeconomics\n- Consumer Behavior\n- Business Strategy\n- Management Essentials\n- Accounting\n- Strategic Management\n- Organizational Behavior"
         },
         "Santa Clara Univeristy": {
             "Area": "Electrical Engineering",

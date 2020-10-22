@@ -5,9 +5,55 @@
         <script src="https://cdn.rawgit.com/showdownjs/showdown/1.7.4/dist/showdown.min.js"></script>
         <link rel="stylesheet" href="/css/styles.css" />
         <link rel="stylesheet" href="/css/addons.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body >
+    <body>
+      <div id="landing-page">
+        <div id="landing-header">
+          Welcome to Admiral IT
+        </div>
+        <div id="landing-body">
+          <div>PRESS ME, the Admiral IT</div>
+          <button class='landing-button' onclick="document.body.removeChild(document.getElementById('landing-page'))"><img class="button-robot" src="https://cdn3.iconfinder.com/data/icons/cinema-40/64/Walle-female_animation_cartoon_robot_android-512.png" alt="robot"></button>
+        </div> 
+        <div id="landing-footer">
+          <div class="footer-contact">
+            <!-- jason -->
+            <img src='https://media-exp1.licdn.com/dms/image/C5603AQHq0XoSmVfZGg/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=RvgipBZwB1FB6tPXkSEp7sHwj38u-Gpbjh9aIWQqZTc' alt='Jason' />
+            <div class="footer-name">Jason Wintery</div>
+            <div class="footer-media">
+              <ul>
+                <a href="https://www.linkedin.com/in/jasonwintery" target="_blank">
+                  <img class="contact-linkedin" src="https://www.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png" alt="LinkedIn">
+                </a>
+              </ul>
+              <ul>
+                <a href="https://github.com/oranje19" target="_blank">
+                  <img class="contact-github" src="https://icons-for-free.com/iconfiles/png/512/part+1+github-1320568339880199515.png" alt="GitHub">
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <!-- michael -->
+            <img src='https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/716/medium/Michael_Murry_1.JPG?1583208264' alt='Michael' />
+            <div class="footer-name">Michael Murry</div>
+            <div class="footer-media">
+              <ul>
+                <a href="https://www.linkedin.com/in/michael-murry-b3746a1a6/" target='_blank'>
+                  <img class="contact-linkedin" src="https://www.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png" alt="LinkedIn"/>
+                </a>
+              </ul>
+              <ul>
+                <a href="https://github.com/MichaelMurry49/" target='_blank'>
+                  <img class="contact-github" src="https://icons-for-free.com/iconfiles/png/512/part+1+github-1320568339880199515.png" alt="GitHub"/>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="wrapper">
 
         <div id="message_window">
@@ -19,7 +65,7 @@
             </div>
             <div class="powered_by">
               <!-- Powered by <a href="https://botkit.ai" target="_blank" title="Building Blocks for Building Bots">Botkit</a> -->
-            admiral IT - the chatBot about Jason and Michael
+            admiral IT - the chatBot
             </div>
             <div>
                 <!-- <button class="permButton" onclick="Botkit.send('Jason', event)">Jason</button>

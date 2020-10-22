@@ -209,7 +209,7 @@ module.exports = function(controller) {
             })
             let mes = "";
             if(level === 0){
-                mes = `Backtracked to canidate selection`
+                mes = `Backtracked to candidate selection`
             } else if(level === 1) {
                 mes = `Backtracked to ${selected}'s option menu`
             } else if(level === 2) {

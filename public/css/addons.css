@@ -8,8 +8,15 @@
     background: #f4a261;
     border-radius: 16px;
     padding: 0.25rem 1rem;
-    font-size: 14px;
+    font-size: 19px;
     cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    /* margin-left: 0; */
+    padding: 0;
+    /* padding-left: 0; */
 }
 
 #start_button:hover {
@@ -38,3 +45,133 @@ input {
     color: #e9c46a;
     background: #e9c46a;
 } */
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    /* display: none; */
+    /* top: 40%;
+    left: 50%; */
+    font-size: 64px;
+    color: black;
+    background: white;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+    text-shadow: 
+    -2px 1px 6px rgba(0, 0, 0, 0.69),
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    width: 100vw;
+    height: 100vh;
+}
+
+#landing-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a8dadc;
+    background: #264653;
+    width: 100%;
+    height: 100;
+}
+
+#landing-body {
+    background: #f4a261;
+    width: 100%;
+}
+
+.landing-button {
+    height: 75;
+    width: 75;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+.landing-button:hover {
+    background-image: url(https://images.hdqwalls.com/wallpapers/wall-e-eve-minimal-4k-je.jpg);
+    /* height: 50;
+    width: 50; */
+}
+
+.button-robot {
+    /* color: white; */
+    height: 50;
+    width: 50;
+    /* border-radius: 150px; */
+}
+
+#landing-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    background: #2a9d8f;
+    width: 100%;
+    height: 380;
+    font-size: 25px;
+    color: #a8dadc;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 300px; */
+    /* margin-left: 50px; */
+    width: 170px;
+    height: 30%;
+    margin-top: 2%;
+    border-radius: 4px;
+    /* margin-right: 70px; */
+    /* padding: 15px 5px 15px 5px; */
+    background-color: papayawhip;
+}
+
+.footer-contact > img {
+    height: 200;
+    width: 200;
+    border-radius: 150px;
+}
+
+.footer-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: papayawhip;
+    margin-right: 10px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.contact-linkedin {
+    display: flex;
+    justify-self: center;
+    width: 90px;
+    height: 90px;
+    /* margin-right: 10px; */
+}
+
+/* .footer-media > ul > a {
+    display: flex;
+    justify-content: center;
+} */
+
+.contact-github {
+    display: flex;
+    justify-self: center;
+    /* margin-top: 20px; */
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.footer-name {
+    margin: 5;
+}
